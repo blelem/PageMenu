@@ -1006,4 +1006,8 @@ public class CAPSPageMenu: UIViewController, UIScrollViewDelegate, UIGestureReco
             })
         }
     }
+
+    deinit{
+	removePageAtIndex(currentPageIndex)
+    }
 }
